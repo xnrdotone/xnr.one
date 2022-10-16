@@ -1,0 +1,204 @@
+defaultContentLanguage = "en" # Change this to change the site's language
+ignoreErrors = ["error-missing-instagram-accesstoken"]
+theme = "hugo.386"
+baseURL = "https://www.xnr.one"
+
+[languages]
+  [languages.en]
+    contentDir = "content"
+    title = "X&R"
+    languageCode = "en"
+    languageName = "English"
+    preserveTaxonomyNames = true
+    
+  [languages.tr]
+    contentDir = "content/tr"
+    title = "X&R"
+    languageCode = "tr"
+    languageName = "Türkçe"
+    preserveTaxonomyNames = false
+    
+    [languages.en.params]
+        # The name to display as main title in the home page
+        mainpagetitle = "x&r's Tech Lair"
+    
+        # The subtitle to display under the title in the home page
+        mainpagesubtitle = "Technology, *nix, lifestyle and more." 
+    
+        # The description of your website. It will be displayed in the home page
+        mainpagedesc = "This site is meant to reflect my thoughts on technology, *nix systems and life itself."
+    
+        # The name to display in the copyright section in the footer
+        copyrightname = "X&R"
+    
+        # The url to use as link in the copyright name in the footer. Leave empty to use none.
+        copyrighturl = ""
+    
+        # Show the "built on Hugo" disclaimer
+        showhugo = true
+    
+        # Urls for social networks
+        #facebook = "https://facebook.com"
+        #twitter = "https://twitter.com"
+        #linkedin = "https://linkedin.com"
+        #github = "https://github.com"
+        #gitlab = "https://gitlab.com"
+    
+        # Enables or disables the loading animations. false activates them. Default is false.
+        loadfastload = true
+    
+        # Sets the speed for the page loading effect. Default is 1.0.
+        loadspeedfactor = 4.0
+    
+        # Enables or disables the second flyby cursor. Default is false.
+        loadonepass = true
+        
+        [languages.tr.params]
+        # The name to display as main title in the home page
+        mainpagetitle = "x&r'ın teknoloji alanı"
+    
+        # The subtitle to display under the title in the home page
+        mainpagesubtitle = "Teknoloji, *nix, yaşam tarzı ve daha fazlası." 
+    
+        # The description of your website. It will be displayed in the home page
+        mainpagedesc = "Bu sitenin amacı benim; teknoloji, *nix sistemleri ve hayat üzerine düşüncelerimi yansıtmaktır."
+    
+        # The name to display in the copyright section in the footer
+        copyrightname = "X&R"
+    
+        # The url to use as link in the copyright name in the footer. Leave empty to use none.
+        copyrighturl = ""
+    
+        # Show the "built on Hugo" disclaimer
+        showhugo = false
+    
+        # Urls for social networks
+        #facebook = "https://facebook.com"
+        #twitter = "https://twitter.com"
+        #linkedin = "https://linkedin.com"
+        #github = "https://github.com"
+        #gitlab = "https://gitlab.com"
+    
+        # Enables or disables the loading animations. false activates them. Default is false.
+        loadfastload = true
+    
+        # Sets the speed for the page loading effect. Default is 1.0.
+        loadspeedfactor = 4.0
+    
+        # Enables or disables the second flyby cursor. Default is false.
+        loadonepass = true
+    
+    [languages.en.params.copyright]
+        name = "X&R"
+    
+        # # The url to use as link in the copyright name in the footer. Leave empty to use none.
+        # url = ""
+        # 
+        # # Text to go before copyright information
+        # prefix = "[]()"
+        # 
+        # Text to go between copyright and hugo disclaimer (if enabled)
+        suffix = "Theme by [JM Fergeau](https://jmf-portfolio.netlify.app/frontend/)"
+        
+    [languages.tr.params.copyright]
+        name = "X&R"
+    
+        # # The url to use as link in the copyright name in the footer. Leave empty to use none.
+        # url = ""
+        # 
+        # # Text to go before copyright information
+        # prefix = "[]()"
+        # 
+        # Text to go between copyright and hugo disclaimer (if enabled)
+        suffix = "Tema [JM Fergeau](https://jmf-portfolio.netlify.app/frontend/) tarafından yapılmıştır | Site [Hugo](gohugo.io/) ile yapılmıştır"
+    
+    [languages.en.menu]
+      # This displays buttons in the navbar to access your contents
+      # [[languages.en.menu.main]]
+      #   identifier = "about" # An unique identifier for the button
+      #   name = "About"       # A display name for the button
+      #   url = "/about/"      # The path to the content. It can lead to a single page (like here)
+      #   weight = 10          # A number to order the buttons in the navbar
+    
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        name = "All posts"
+        url = "/post/"       # The path can lead to a content folder too.
+        weight = 20
+        
+        [[languages.en.menu.rmain]]
+        identifier = "en"
+        name = "EN"
+        url = "/en/"       # The path can lead to a content folder too.
+        weight = 30
+        
+        # [[languages.en.menu.main]]
+        # identifier = "tr"
+        # name = "TR"
+        # url = "/tr/"       # The path can lead to a content folder too.
+        # weight = 30
+        
+    [languages.tr.menu]
+      # This displays buttons in the navbar to access your contents
+      # [[languages.tr.menu.main]]
+      #   identifier = "about" # An unique identifier for the button
+      #   name = "Hakkımda"       # A display name for the button
+      #   url = "/tr/about/"      # The path to the content. It can lead to a single page (like here)
+      #   weight = 10          # A number to order the buttons in the navbar
+    
+      [[languages.tr.menu.main]]
+        identifier = "posts"
+        name = "Tüm gönderiler"
+        url = "/tr/post/"       # The path can lead to a content folder too.
+        weight = 20
+        
+        [[languages.tr.menu.rmain]]
+        identifier = "tr"
+        name = "TR"
+        url = "/tr/"       # The path can lead to a content folder too.
+        weight = 30
+        
+        [[languages.tr.menu.main]]
+        identifier = "en"
+        name = "EN"
+        url = "/"       # The path can lead to a content folder too.
+        weight = 30
+    
+    [languages.en.taxonomies]
+    category = "categories"
+    tag = "tags"
+    
+    [languages.tr.taxonomies]
+    "katagoriler" = "katagoriler"
+    "etiketler" = "etiketler"
+    
+    # [privacy]
+    # 
+      # [privacy.vimeo]
+        # disabled = false
+        # simple = true
+    # 
+      # [privacy.twitter]
+        # disabled = false
+        # enableDNT = true
+        # simple = true
+    # 
+      # [privacy.instagram]
+        # disabled = false
+        # simple = true
+    # 
+      # [privacy.youtube]
+        # disabled = false
+        # privacyEnhanced = true
+    # 
+    # [services]
+    # 
+      # [services.instagram]
+        # disableInlineCSS = true
+    # 
+      # [services.twitter]
+        # disableInlineCSS = true
+    
+
+
+    

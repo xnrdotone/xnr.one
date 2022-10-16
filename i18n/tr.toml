@@ -1,0 +1,20 @@
+[home]
+other = "Ana sayfa"
+
+[posts]
+other = "Gönderiler"
+
+[postslist]
+other = "Blog gönderileri"
+
+[categories]
+other = "Kategoriler"
+
+[tags]
+other = "Etiketler"
+
+[backtohome]
+other = "Ana sayfaya geri dön"
+
+[builton]
+other = "Built on"
