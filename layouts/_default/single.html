@@ -5,11 +5,40 @@
         <h1>{{ .Title }} - {{ .Date.Format "Mon, Jan 2, 2006" }}</h1>
     </div>
     <p class="lead">{{ .Params.description }}</p>
+    
+    {{ with .GetTerms (T "categories") }}
+  <p>{{ T "categories" | title }}:
+    {{ range . }}
+      <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    {{ end }}
+  </p>
+{{ end }}
+
+{{ with .GetTerms (T "tags") }}
+  <p>{{ T "tags" | title }}:
+    {{ range . }}
+      <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    {{ end }}
+  </p>
+{{ end }}
+    
     {{ .Content }}
+    <!--
     <h4><a class = "backtohome" href="{{ .Site.BaseURL }}">{{ i18n "backtohome" }}</a></h4>
     <h4><a class = "backtohome" href="{{ "/tr" }}">{{ i18n "backtohome" }}</a></h4>
     <script>if(document.documentElement.lang == "en"){document.getElementsByClassName("backtohome")[1].style.display = "none"}
             else {document.getElementsByClassName("backtohome")[0].style.display = "none"}</script>
+    -->
+    
+    <style type="text/css">
+    #limit {
+        max-width: 500px;
+    }
+    </style>
+    
+   <div id="limit"> {{ partial "comments.html" . }} </div>
 </div>
+
+
 
 {{ end }}

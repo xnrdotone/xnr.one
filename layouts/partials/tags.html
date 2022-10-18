@@ -3,3 +3,9 @@
     <a href="{{ .Permalink }}">{{.Title}}</a>
 </li>
 {{ end }}
+
+{{range first 10 ($.Site.GetPage "taxonomyTerm" "etiketler").Pages }}
+<li>
+    <a href="{{ .Permalink }}">{{.Title}}</a>
+</li>
+{{ end }}

@@ -2,6 +2,7 @@ defaultContentLanguage = "en" # Change this to change the site's language
 ignoreErrors = ["error-missing-instagram-accesstoken"]
 theme = "hugo.386"
 baseURL = "https://www.xnr.one"
+relativeURLs = "True"
 
 [languages]
   [languages.en]
@@ -38,10 +39,11 @@ baseURL = "https://www.xnr.one"
         showhugo = true
     
         # Urls for social networks
-        #facebook = "https://facebook.com"
-        #twitter = "https://twitter.com"
+        email = "mailto:xnrdotone@gmail.com"
+        # facebook = "https://facebook.com"
+        twitter = "https://twitter.com/XNRdotONE"
         #linkedin = "https://linkedin.com"
-        #github = "https://github.com"
+        github = "https://github.com/xnrdotone"
         #gitlab = "https://gitlab.com"
     
         # Enables or disables the loading animations. false activates them. Default is false.
@@ -73,10 +75,11 @@ baseURL = "https://www.xnr.one"
         showhugo = false
     
         # Urls for social networks
-        #facebook = "https://facebook.com"
-        #twitter = "https://twitter.com"
+        email = "mailto:xnrdotone@gmail.com"
+        # facebook = "https://facebook.com"
+        twitter = "https://twitter.com/XNRdotONE"
         #linkedin = "https://linkedin.com"
-        #github = "https://github.com"
+        github = "https://github.com/xnrdotone"
         #gitlab = "https://gitlab.com"
     
         # Enables or disables the loading animations. false activates them. Default is false.
@@ -169,19 +172,23 @@ baseURL = "https://www.xnr.one"
     tag = "tags"
     
     [languages.tr.taxonomies]
-    "katagoriler" = "katagoriler"
+    "katagoriler" = "kategoriler"
     "etiketler" = "etiketler"
     
-    # [privacy]
-    # 
+    [privacy]
+    
       # [privacy.vimeo]
-        # disabled = false
-        # simple = true
-    # 
-      # [privacy.twitter]
-        # disabled = false
-        # enableDNT = true
-        # simple = true
+      #   disabled = false
+      #   simple = true
+    
+      [privacy.twitter]
+        disabled = false
+        enableDNT = true
+        simple = true
+        
+      [privacy.email]
+        disabled = false
+        simple = true
     # 
       # [privacy.instagram]
         # disabled = false
@@ -191,13 +198,13 @@ baseURL = "https://www.xnr.one"
         # disabled = false
         # privacyEnhanced = true
     # 
-    # [services]
-    # 
+    [services]
+    
       # [services.instagram]
-        # disableInlineCSS = true
-    # 
-      # [services.twitter]
-        # disableInlineCSS = true
+      #   disableInlineCSS = true
+    
+      [services.twitter]
+        disableInlineCSS = true
     
 
 
