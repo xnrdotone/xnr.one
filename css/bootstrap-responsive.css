@@ -1050,8 +1050,8 @@
   }
   .nav-collapse,
   .nav-collapse.collapse {
-    height: 0;
-    overflow: hidden;
+    height: auto !important;
+    overflow: visible !important;
   }
   .nav-collapse > ul.nav > li.active > a {
     color: #bbbbbb;
