@@ -19,6 +19,13 @@ relativeURLs = "True"
     languageName = "Türkçe"
     preserveTaxonomyNames = false
     
+    [permalinks]
+      trSite="/tr"
+      enSite="/"
+    
+    [params]
+      customCSS = ["css/image-modal.css"]
+    
     [languages.en.params]
         # The name to display as main title in the home page
         mainpagetitle = "x&r's Tech Lair"
@@ -129,11 +136,11 @@ relativeURLs = "True"
         url = "/post/"       # The path can lead to a content folder too.
         weight = 20
         
-        [[languages.en.menu.rmain]]
-        identifier = "en"
-        name = "EN"
-        url = "/en/"       # The path can lead to a content folder too.
-        weight = 30
+        # [[languages.en.menu.rmain]]
+        # identifier = "en"
+        # name = "EN"
+        # url = "/en/"       # The path can lead to a content folder too.
+        # weight = 30
         
         # [[languages.en.menu.main]]
         # identifier = "tr"
@@ -155,17 +162,17 @@ relativeURLs = "True"
         url = "/tr/post/"       # The path can lead to a content folder too.
         weight = 20
         
-        [[languages.tr.menu.rmain]]
-        identifier = "tr"
-        name = "TR"
-        url = "/tr/"       # The path can lead to a content folder too.
-        weight = 30
-        
-        [[languages.tr.menu.main]]
-        identifier = "en"
-        name = "EN"
-        url = "/"       # The path can lead to a content folder too.
-        weight = 30
+#         [[languages.tr.menu.rmain]]
+#         identifier = "tr"
+#         name = "TR"
+#         url = "/tr/"       # The path can lead to a content folder too.
+#         weight = 30
+#         
+#         [[languages.tr.menu.main]]
+#         identifier = "en"
+#         name = "EN"
+#         url = "/"       # The path can lead to a content folder too.
+#         weight = 30
     
     [languages.en.taxonomies]
     category = "categories"
