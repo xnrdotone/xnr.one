@@ -19,10 +19,6 @@ relativeURLs = "True"
     languageName = "Türkçe"
     preserveTaxonomyNames = false
     
-    [permalinks]
-      trSite="/tr"
-      enSite="/"
-    
     [params]
       customCSS = ["css/image-modal.css"]
     
@@ -136,6 +132,7 @@ relativeURLs = "True"
         url = "/post/"       # The path can lead to a content folder too.
         weight = 20
         
+        
         # [[languages.en.menu.rmain]]
         # identifier = "en"
         # name = "EN"
@@ -161,6 +158,7 @@ relativeURLs = "True"
         name = "Tüm gönderiler"
         url = "/tr/post/"       # The path can lead to a content folder too.
         weight = 20
+        
         
 #         [[languages.tr.menu.rmain]]
 #         identifier = "tr"
