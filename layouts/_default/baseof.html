@@ -2,7 +2,6 @@
 <html lang="{{ .Language.Lang }}">
     {{- partial "image-modal.html"}}
     {{- partial "head.html" . -}}
-    {{- partial "analytics.html" . }}
     <body>
         {{- partial "header.html" . -}}
         <div id="content" class="container">
@@ -10,6 +9,7 @@
         </div>
         {{- partial "footer.html" . -}}
 <!--         {{- partial "term-index.html" . -}} -->
+        {{- partial "analytics.html" . }}
     </body>
     {{- partial "scripts.html" . -}}
 </html>

@@ -1,6 +1,6 @@
 ---
 title: "Why Do People Use *nix?"
-date: 2022-10-16T15:13:57+03:00
+date: 2022-10-16
 description: "What is *nix and why do people use it."
 tags: ["*nix", "Personal Preferences", "Beginner"]
 categories: ["*nix"]
