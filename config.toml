@@ -4,6 +4,9 @@ theme = "hugo.386"
 baseURL = "https://www.xnr.one"
 relativeURLs = "True"
 
+googleAnalytics = "G-LWQ1GN5B01"
+
+
 [languages]
   [languages.en]
     contentDir = "content"
