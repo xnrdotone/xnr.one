@@ -1,5 +1,5 @@
 ---
-title: "What *nix You Should Use?"
+title: "What *nix Should You Use?"
 date: 2022-10-20
 description: "What should you know before picking a *nix distribution"
 tags: ["*nix", "Personal Preferences", "Beginner"]

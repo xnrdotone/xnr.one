@@ -2,14 +2,14 @@
 
 <div class="row-fluid navmargin">
     <div class="page-header">
-        <h1>{{ .Title }} - {{ .Date.Format "Mon, Jan 2, 2006" }}</h1>
+        <h1>{{ .Title }} - {{ .Date.Format "2-1-2006" }}</h1>
     </div>
     <p class="lead">{{ .Params.description }}</p>
     
     {{ with .GetTerms (T "categories") }}
   <p>{{ T "categories" | title }}:
     {{ range . }}
-      <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      <a href="{{ .RelPermalink }}">|{{ .LinkTitle }}|</a>
     {{ end }}
   </p>
 {{ end }}
@@ -17,7 +17,7 @@
 {{ with .GetTerms (T "tags") }}
   <p>{{ T "tags" | title }}:
     {{ range . }}
-      <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      <a href="{{ .RelPermalink }}">|{{ .LinkTitle }}|</a>
     {{ end }}
   </p>
 {{ end }}
@@ -32,7 +32,7 @@
     
     <style type="text/css">
     #limit {
-        max-width: 500px;
+        max-width: 1000px;
     }
     </style>
     

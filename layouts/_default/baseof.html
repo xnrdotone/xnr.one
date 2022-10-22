@@ -2,6 +2,8 @@
 <html lang="{{ .Language.Lang }}">
     {{- partial "image-modal.html"}}
     {{- partial "head.html" . -}}
+    <script>bgColor = localStorage.getItem("bgColor");
+document.body.style.backgroundColor = bgColor;</script>
     <body>
         {{- partial "header.html" . -}}
         <div id="content" class="container">

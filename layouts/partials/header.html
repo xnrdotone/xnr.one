@@ -42,7 +42,24 @@
                     <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
                   {{ end }}
                 </ul>-->
+                
 <!--            <script language="JavaScript" type="javascript" src="{{ "js/jquery.js" | relURL }}">$(document).ready(function(){$('.nav-collapse').collapse("show");});</script>-->
+
+<ul class="nav" style="float: right; margin-right: -10px;">
+<li><a onclick="myFunction()" style="cursor:pointer">Dark</a></li>
+<script> function myFunction() {
+let bgColor;
+if (document.body.style.backgroundColor  != "rgb(0, 0, 0)"){
+localStorage.setItem("bgColor", "#000000");
+}
+else {
+localStorage.setItem("bgColor", "#000084");
+}
+bgColor = localStorage.getItem("bgColor");
+console.log(bgColor);
+document.body.style.backgroundColor = bgColor;
+} </script>
+</ul>
         </div>
     </div>
 </nav>
