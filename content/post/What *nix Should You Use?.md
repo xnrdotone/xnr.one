@@ -93,11 +93,13 @@ Like I said before, there are endless choices so I wanted to list couple of dist
 
 * [Zorin OS](https://zorin.com/os/) (With [Gnome](https://zorin.com/os/download/) Desktop Environment)
 
+* [Opensuse Leap](https://get.opensuse.org/leap/?type=desktop) (With [Gnome](https://get.opensuse.org/leap/?type=desktop) or [KDE Plasma](https://get.opensuse.org/leap/?type=desktop) Desktop Environment)
+
 All of the above distros I gave you have unique looks and feelings from each other despite some having the same desktop environment. So just look at their sites, maybe search their names in your web browser and look at some pictures or watch videos about them, and most importantly; Just pick one! Don't worry about it, you will like it. It's better than desperately looking at endless options believe me.
 
 You may ask "All the examples above are fixed release distros, what if I want to use a rolling release distro?"
 
-To that I would say, calm down... You won't be using your first distro for more than 6 months probably you can make the choice down the line when you get more familiar with BSD/Linux. Rolling release distros require a bit more knowledge but if you **must** use them I'd say use [Manjaro](https://manjaro.org/) (with [Gnome](https://manjaro.org/download/) or [KDE Plasma](https://manjaro.org/download/) desktop environment) It's rather balanced when it comes to update cycles. But if you want something that gets all the updates instantly well... There is [Endavour OS](https://endeavouros.com/). Don't say I didn't warn you though, things **will** break. Luckly both Manjaro Linux and Endavour OS has rather great community forums, which leads us to our next topic.
+To that I would say, calm down... You won't be using your first distro for more than 6 months probably you can make the choice down the line when you get more familiar with BSD/Linux. Rolling release distros require a bit more knowledge but if you **must** use them I'd say use [Manjaro](https://manjaro.org/) (with [Gnome](https://manjaro.org/download/) or [KDE Plasma](https://manjaro.org/download/) desktop environment) It's rather balanced when it comes to update cycles. There is also [Opensuse Tumbleweed](https://get.opensuse.org/tumbleweed/?type=desktop) (with [Gnome](https://get.opensuse.org/tumbleweed/?type=desktop) or [KDE Plasma](https://get.opensuse.org/tumbleweed/?type=desktop) desktop environment) which gets updated even less frequently than Manjaro. But if you want something that gets all the updates instantly well... There is [Endavour OS](https://endeavouros.com/). Don't say I didn't warn you though, things **will** break. Luckly both Manjaro Linux and Endavour OS has rather great community forums, which leads us to our next topic.
 
 ---
 

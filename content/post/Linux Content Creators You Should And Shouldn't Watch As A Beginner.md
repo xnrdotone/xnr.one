@@ -1,5 +1,5 @@
 ---
-title: "*nix Content Creators You Should and Shouldn't Watch As A Beginner"
+title: "Linux Content Creators You Should and Shouldn't Watch As A Beginner"
 date: 2022-10-22
 description: "Who are the best Linux content creators for a beginner?"
 tags: ["Linux", "YouTube", "Content Creators", "Personal Preferences", "Beginner"]
