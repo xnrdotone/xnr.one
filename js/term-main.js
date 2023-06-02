@@ -496,7 +496,7 @@ var main = (function () {
                 configs.getInstance().type_delay
             ).init();
         }
-    }; 
+    };
 })();
 
 window.onload = main.listener;
