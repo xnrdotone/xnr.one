@@ -1,10 +1,12 @@
-```php
+---
+
 title: "Containerized Package Managers vs Containerized Distros: Which Will Be The Future?"
-date: 2023-04-30
+date: 2023-06-02
 description: "Containerization is the way but which option is more likely to be the feature?"
 tags: ["Linux", "Containerization", "Intermediate", "Distros"]
-categories: ["Linux", ]
-```
+categories: ["Linux"]
+
+---
 
 Hello once again! Today we have a more intermediate subject in hand. Please enjoy!
 
@@ -14,7 +16,7 @@ Hello once again! Today we have a more intermediate subject in hand. Please enjo
 
 Simply put, instead of installing software on your operating system directly, installing it in a sandbox environment.
 
-And what is a sandbox? Well as the name suggests really, it's an isolated space in your computer that has no access to your real file system... Well at least most of it. 
+And what is a sandbox? Well as the name suggests really, it's an isolated space in your computer that has no access to your real file system... Well at least most of it.
 
 Why use sanboxing though? Well let's say you installed an unofficial package (such as the packages from AUR/COPR/PPA's), there is no guarantee that that package is properly scanned. I mean sure there might be some automated scans while that person adds that package to its respected external repository but malwares and ransomwares change and become smarter day by day. So the only way you are 100% secure is to use such repositories with sandboxing.
 
@@ -24,13 +26,13 @@ Well now we got the definitions and reasons out of the way let us talk about our
 
 ---
 
-#### Contestant One:  Containerized Package Managers:
+#### Contestant One: Containerized Package Managers:
 
 Unlike your (non-containerized) system's default package manager, these package managers are created to be secure by default.
 
 How can they manage that? Well simply by not using system libraries as dependencies and restricting the packages access to the operating system. Anything goes through these containerized package managers to contact the operating system so you can safely use your system.
 
-What are my options? We got Flatpaks, AppImages and Snaps. I'll dissect them one by one. 
+What are my options? We got Flatpaks, AppImages and Snaps. I'll dissect them one by one.
 
 **Flatpaks:** In most cases best option out of the three big container package managers. Most of the software you want to use are available in FlatHub, which is a great repository for Flatpaks. Packages are rather recent and I personally use this option alongside with some AppImages. FlatHub is not a decentralized repository but certainly is a trusted one. Official packages are marked "Verified" so you can't go wrong with that. There is no payment method yet but it is a spoken idea nowadays, so everything is free with no donation option unfortunately.
 
@@ -44,7 +46,7 @@ One note I should add is that most of the time these solutions ends up with prog
 
 #### Contestant Two: Containerized Distributions:
 
-Unlike your average distros these are made specifically for containers in mind. Sure they do use non-containerized packages as well such as containers themselves, low level system libraries, the kernel and, in most cases window managers and desktop environments. However, years showed us that these sort of packages are certainly less vulnerable than your third party repos. These distros utilize Flatpaks, AppImages and Snaps time to time but plus to those they come with distro containers as well. So what are distro containers? Well basically put they are distros containerized within your distro without access to host distros system files and libraries. They have their own libraries and kernels locked up in the container yet they can be used as if there are a part of your system, so not that different from containerized package managers in that regard. 
+Unlike your average distros these are made specifically for containers in mind. Sure they do use non-containerized packages as well such as containers themselves, low level system libraries, the kernel and, in most cases window managers and desktop environments. However, years showed us that these sort of packages are certainly less vulnerable than your third party repos. These distros utilize Flatpaks, AppImages and Snaps time to time but plus to those they come with distro containers as well. So what are distro containers? Well basically put they are distros containerized within your distro without access to host distros system files and libraries. They have their own libraries and kernels locked up in the container yet they can be used as if there are a part of your system, so not that different from containerized package managers in that regard.
 
 So what are your options here? Well before that I must tell you about immutable distributions. An immutable distro is basically a distro that you simply can not change anything on the system layer. Because all of your system files are read-only. This is a time to time limiting looking practice but don't feel discouraged. People already found ways around it. What does immutability bring? Well, ease of troubleshooting mostly and a more stable system. Let's give an example: You got an error, instead of your computer being unique to all of the other systems you have a common system layer. So your problem is not from the thousands of libraries you installed but a genuine problem in your distro of choice. So you can apply the patch easily without looking through all of your system journeys to find where the problem occurred. Now we got that out of the way let's look at our distros.
 
